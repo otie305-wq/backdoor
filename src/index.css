@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-pr: #000000;
+  --color-dark: #000000;
+  --color-acc: #e53935;
+  --color-grayTone: #d9d9d9;
+  --color-white: #fafafa;
+
+  /* ✅ Fonts (font namespace) */
+  --font-heading: Geist, sans-serif;
+  --font-body: Geist, sans-serif;
+  --font-heading-ar: "Cairo", "Tajawal", sans-serif;
+  --font-body-ar: "Cairo", "Tajawal", sans-serif;
+
+  /* ✅ Font sizes (text namespace) */
+  --text-h1: max(48px, min(5vw, 76px));
+  --text-h2: 1.875rem;
+  --text-h3: 1.5rem;
+  --text-h5: 1.25rem;
+  --text-h6: 1.5rem;
+  --text-p: 1.25rem;
+  --text-pSm: 1rem;
+}
+
+body,
+html {
+  background-color: #000000;
+}
+html[dir="rtl"] {
+  --font-heading: var(--font-heading-ar);
+  --font-body: var(--font-body-ar);
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-body);
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6 {
+  font-family: var(--font-heading);
+}
+
+[lang="en"] {
+  font-family: Geist, sans-serif;
+}

@@ -1,0 +1,165 @@
+{
+  "siteName": "backdoor",
+  "nav": {
+    "item1": "Home",
+    "item2": "Services",
+    "item3": "Contact",
+    "submenu": {
+      "usedTech": "Technologies",
+      "featured": "Featured",
+      "services": "What We Do",
+      "achievement": "Impact",
+      "projects": "Projects"
+    }
+  },
+
+  "hero": {
+    "title": "Backdoor Establishment",
+    "description": "More than just a service provider — we’re your digital innovation partner, crafting custom-built solutions that accelerate growth, streamline operations, and future-proof your business.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "usedTech": {
+    "header": "Built on a foundation of fast, production-grade tooling",
+    "poweredTitle": "Powered By",
+    "poweredSub": "Modern Technologies",
+    "cards": {
+      "react": {
+        "title": "React",
+        "desc": "The library for web and native user interfaces. Built on the latest React features, including Server Components and Actions."
+      },
+      "nextjs": {
+        "title": "Next.js",
+        "desc": "The React framework for production. Provides the best developer experience with all features needed for production."
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "desc": "JavaScript with syntax for types. Helps catch errors early through static type checking and provides rich IDE support."
+      },
+      "tailwind": {
+        "title": "Tailwind CSS",
+        "desc": "A utility-first CSS framework for rapidly building modern websites without ever leaving your HTML."
+      },
+      "node": {
+        "title": "Node.js",
+        "desc": "JavaScript runtime built on Chrome's V8 engine. Enables building scalable network applications with event-driven architecture."
+      }
+    }
+  },
+
+  "services": {
+    "header": "Our Services",
+    "desc": "We provide comprehensive development solutions using cutting-edge technologies to help businesses thrive in the digital landscape with scalable and efficient applications.",
+    "list": {
+      "web": {
+        "title": "Web Development",
+        "desc": "Full-stack web applications using modern frameworks like React, Next.js, and Node.js for scalable and performant solutions."
+      },
+      "mobile": {
+        "title": "Mobile Development",
+        "desc": "Cross-platform mobile applications with React Native and Flutter, delivering native performance across iOS and Android platforms."
+      },
+      "design": {
+        "title": "UI/UX Design",
+        "desc": "User-centered design solutions that create intuitive and engaging experiences, from wireframes to high-fidelity prototypes."
+      },
+      "cloud": {
+        "title": "Cloud Solutions",
+        "desc": "Scalable cloud infrastructure and deployment solutions using AWS, Azure, and Google Cloud for reliable and secure applications."
+      },
+      "api": {
+        "title": "API Development",
+        "desc": "Robust RESTful and GraphQL APIs with comprehensive documentation, authentication, and rate limiting for seamless integrations."
+      },
+      "consulting": {
+        "title": "Technical Consulting",
+        "desc": "Strategic technology guidance and architecture planning to help you make informed decisions for your digital transformation journey."
+      }
+    }
+  },
+  "featured": {
+    "header": "Our Featured Solutions",
+    "desc": "Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.",
+    "cards": {
+      "react": {
+        "title": "React Development",
+        "desc": "The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions."
+      },
+      "web": {
+        "title": "Web Development",
+        "desc": "Modern web applications with cutting-edge technologies. Built for performance, scalability, and exceptional user experience."
+      },
+      "mobile": {
+        "title": "Mobile Solutions",
+        "desc": "Cross-platform mobile applications with native performance. Seamless user experience across iOS and Android platforms."
+      },
+      "cloud": {
+        "title": "Cloud Solutions",
+        "desc": "Scalable cloud infrastructure and deployment solutions. Optimized for performance, security, and cost-effectiveness."
+      }
+    }
+  },
+  "achievement": {
+    "header": "Our Global Impact",
+    "description": "Trusted by industry leaders worldwide, we've delivered exceptional results across continents, building a legacy of innovation and excellence in every project we undertake.",
+    "stats": {
+      "worker": "Worker",
+      "projects": "Projects",
+      "clients": "Clients",
+      "countries": "Countries"
+    }
+  },
+  "projects": {
+    "header": "Proud Projects That make Us Stand Out",
+    "description": "Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.",
+    "popup": {
+      "contactMessage": "To know more about our work, contact us."
+    },
+    "cards": {
+      "ecommerce": {
+        "altText": "E-Commerce Platform",
+        "title": "E-Commerce Platform",
+        "description": "Modern e-commerce solution with real-time inventory management"
+      },
+      "saas": {
+        "altText": "SaaS Dashboard",
+        "title": "SaaS Dashboard",
+        "description": "Analytics dashboard with real-time data visualization"
+      },
+      "mobile": {
+        "altText": "Mobile App",
+        "title": "Mobile App",
+        "description": "Cross-platform app with seamless user experience"
+      },
+      "ai": {
+        "altText": "AI Platform",
+        "title": "AI Platform",
+        "description": "Intelligent automation with machine learning algorithms"
+      }
+    }
+  },
+  "footer": {
+    "social": {
+      "twitter": "Twitter",
+      "youtube": "YouTube",
+      "facebook": "Facebook"
+    },
+    "rights": "All rights reserved by {{company}}."
+  },
+  "contact": {
+    "question": "Have any question about us?",
+    "description": "Don’t hesitate to contact us",
+    "button": "Contact Us",
+    "getInTouch": "Get in Touch",
+    "ContactMethods": "Contact Methods",
+    "ContactNumber": "Contact Number",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "call": "Call",
+    "SendMessage": "We’re happy to hear from you",
+    "name": "Your Name",
+    "phone": "Phone Number",
+    "message": "Message",
+    "send": "Send"
+  }
+}

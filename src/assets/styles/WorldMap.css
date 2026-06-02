@@ -1,0 +1,20 @@
+:root {
+  --map-fill-color: #222933;
+  --map-stroke-color: #fafafa;
+  --map-stroke-width: 2;
+}
+
+.pin {
+  fill: #e53e3e;
+  stroke: white;
+  stroke-width: 2.5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform-origin: center center;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.pin:hover {
+  fill: #c53030;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
