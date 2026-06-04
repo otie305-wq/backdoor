@@ -20,10 +20,9 @@ const AchievementSection: React.FC = () => {
   const { t } = useTranslation();
 
   const stats = [
-    { value: "500+", label: t("achievement.stats.worker") },
-    { value: "120+", label: t("achievement.stats.projects") },
-    { value: "80+", label: t("achievement.stats.clients") },
-    { value: "30+", label: t("achievement.stats.countries") },
+    { value: "75+", label: t("achievement.stats.projects") },
+    { value: "7", label: t("achievement.stats.countries") },
+    { value: "6+", label: t("achievement.stats.experience") },
   ];
 
   return (

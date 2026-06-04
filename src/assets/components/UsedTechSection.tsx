@@ -98,12 +98,47 @@ const UsedTechSection: React.FC = () => {
             <TechCard {...techList[0]} />
 
             {/* Powered By */}
-            <div className="order-first lg:order-none">
+            <div className="order-first lg:order-none relative">
               <img
                 src="/pb4.svg"
                 alt="Powered By"
-                className="max-h-200 group-hover:opacity-80 transition-opacity duration-300"
+                className="w-full max-h-200 group-hover:opacity-80 transition-opacity duration-300"
               />
+
+              {/* React — top-left, red wire endpoint (41/385, 19/220) */}
+              <div className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: '10.8%', top: '8.6%' }}>
+                <div className="w-8 h-8 bg-gradient-to-br from-acc/30 to-acc/50 rounded-xl flex items-center justify-center shadow-lg">
+                  <i className="fab fa-react text-white text-sm"></i>
+                </div>
+              </div>
+
+              {/* Next.js — top-center, dark wire endpoint (204/385, 19/220) */}
+              <div className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: '53.2%', top: '8.6%' }}>
+                <div className="w-8 h-8 bg-gradient-to-br from-white/20 to-white/40 rounded-xl flex items-center justify-center shadow-lg">
+                  <i className="fab fa-js-square text-black text-sm"></i>
+                </div>
+              </div>
+
+              {/* TypeScript — bottom-left, dark wire endpoint (178/385, 181/220) */}
+              <div className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: '46.4%', top: '82.3%' }}>
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-500/30 to-blue-500/50 rounded-xl flex items-center justify-center shadow-lg">
+                  <i className="fab fa-js-square text-blue-400 text-sm"></i>
+                </div>
+              </div>
+
+              {/* Tailwind CSS — bottom-center, dark wire endpoint (204/385, 209/220) */}
+              <div className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: '53.2%', top: '95%' }}>
+                <div className="w-8 h-8 bg-gradient-to-br from-cyan-500/30 to-cyan-500/50 rounded-xl flex items-center justify-center shadow-lg">
+                  <i className="fab fa-css3-alt text-cyan-400 text-sm"></i>
+                </div>
+              </div>
+
+              {/* Node.js — bottom-right, green wire endpoint (312/385, 181/220) */}
+              <div className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: '81.2%', top: '82.3%' }}>
+                <div className="w-8 h-8 bg-gradient-to-br from-green-500/30 to-green-500/50 rounded-xl flex items-center justify-center shadow-lg">
+                  <i className="fab fa-node-js text-green-400 text-sm"></i>
+                </div>
+              </div>
             </div>
 
             {techList.slice(1).map((tech, index) => (

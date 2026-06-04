@@ -1858,6 +1858,42 @@ const WorldMap: React.FC = () => {
         />
         <circle
           className="pin"
+          id="pin-UAE"
+          cx="635"
+          cy="392"
+          r="7"
+          fill="red"
+          stroke="white"
+          strokeWidth="2"
+          cursor="pointer"
+          data-info="United Arab Emirates"
+        />
+        <circle
+          className="pin"
+          id="pin-KZ"
+          cx="665"
+          cy="300"
+          r="7"
+          fill="red"
+          stroke="white"
+          strokeWidth="2"
+          cursor="pointer"
+          data-info="Kazakhstan"
+        />
+        <circle
+          className="pin"
+          id="pin-TJ"
+          cx="676"
+          cy="343"
+          r="7"
+          fill="red"
+          stroke="white"
+          strokeWidth="2"
+          cursor="pointer"
+          data-info="Tajikistan"
+        />
+        <circle
+          className="pin"
           cx="600"
           cy="280"
           r="7"
@@ -1866,6 +1902,30 @@ const WorldMap: React.FC = () => {
           strokeWidth="2"
           cursor="pointer"
           data-info="Russia"
+        />
+        <circle
+          className="pin"
+          id="pin-DE"
+          cx="503"
+          cy="283"
+          r="7"
+          fill="red"
+          stroke="white"
+          strokeWidth="2"
+          cursor="pointer"
+          data-info="Germany"
+        />
+        <circle
+          className="pin"
+          id="pin-TH"
+          cx="762"
+          cy="418"
+          r="7"
+          fill="red"
+          stroke="white"
+          strokeWidth="2"
+          cursor="pointer"
+          data-info="Thailand"
         />
       </svg>
 

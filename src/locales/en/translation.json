@@ -103,10 +103,9 @@
     "header": "Our Global Impact",
     "description": "Trusted by industry leaders worldwide, we've delivered exceptional results across continents, building a legacy of innovation and excellence in every project we undertake.",
     "stats": {
-      "worker": "Worker",
       "projects": "Projects",
-      "clients": "Clients",
-      "countries": "Countries"
+      "countries": "Countries",
+      "experience": "Years Experience"
     }
   },
   "projects": {
