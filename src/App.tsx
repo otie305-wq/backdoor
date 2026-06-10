@@ -9,21 +9,24 @@ import ProjectsSection from "./assets/components/ProjectsSection";
 import ContactSection from "./assets/components/ContactSection";
 import FooterSection from "./assets/components/FooterSection";
 import PartnersSection from "./assets/components/PartnersSection";
+import BinaryBackground from "./assets/components/BinaryBackground";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <UsedTechSection />
-      <FeaturedSection />
-      <ServicesSectios />
-      <AchievementSection />
-      <PartnersSection />
-      <ProjectsSection />
-      <ContactSection />
-      <FooterSection />
-      {}
+      <BinaryBackground />
+      <div style={{ position: "relative", zIndex: 1 }}>
+        <Navbar />
+        <HeroSection />
+        <UsedTechSection />
+        <FeaturedSection />
+        <ServicesSectios />
+        <AchievementSection />
+        <PartnersSection />
+        <ProjectsSection />
+        <ContactSection />
+        <FooterSection />
+      </div>
     </>
   );
 }
