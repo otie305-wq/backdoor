@@ -8,12 +8,16 @@ const HeroSection: React.FC = () => {
   return (
     <section className="heroSection mb-10" id="hero">
       <div className="hero bg-pr text-white min-h-screen relative overflow-hidden">
+        {/* Logo + site name pinned just below the navbar */}
+        <div className="absolute top-20 left-0 right-0 flex justify-center z-10">
+          <div className="flex items-center gap-3" dir="ltr">
+            <img src={newlogo} alt="Site Logo" className="w-10 h-10 object-cover" />
+            <span className="text-xl font-bold tracking-wide text-white">{t("siteName")}</span>
+          </div>
+        </div>
+
         <div className="hero-content text-center relative z-10">
           <div className="max-w-6xl mx-auto">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <img src={newlogo} alt="Site Logo" className="w-5 h-5 object-cover" />
-              <span lang="en" className="text-sm font-semibold tracking-wide text-gray-300">{t("siteName")}</span>
-            </div>
             <h1 className="text-h1 font-heading font-bold tracking-tighter mb-10 bg-gradient-to-r from-white via-acc to-white bg-clip-text text-transparent">
               {t("hero.title")}
             </h1>
