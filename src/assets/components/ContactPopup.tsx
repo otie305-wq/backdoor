@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import emailjs from "@emailjs/browser";
-
 interface ContactPopupProps {
   isOpen: boolean;
   onClose: () => void;
@@ -9,36 +7,6 @@ interface ContactPopupProps {
 
 const ContactPopup: React.FC<ContactPopupProps> = ({ isOpen, onClose }) => {
   const { t } = useTranslation();
-  const [form, setForm] = useState({ name: "", phone: "", message: "" });
-  const [sending, setSending] = useState(false);
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setSending(true);
-    setStatus("idle");
-    try {
-      await emailjs.send(
-        "service_werumyd",
-        "template_0d3v545",
-        { name: form.name, phone: form.phone, message: form.message },
-        "KTxpiVyqrCGoZyamJ"
-      );
-      setStatus("success");
-      setForm({ name: "", phone: "", message: "" });
-      setTimeout(onClose, 1500);
-    } catch {
-      setStatus("error");
-    } finally {
-      setSending(false);
-    }
-  };
 
   if (!isOpen) return null;
 
@@ -116,68 +84,6 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ isOpen, onClose }) => {
             </div>
           </div>
 
-          {/* Contact Form Section */}
-          <div className="p-6 bg-gradient-to-r from-white/5 to-white/10 rounded-xl border border-white/10 backdrop-blur-sm">
-            <h5 className="text-lg font-heading font-semibold text-white mb-4 flex items-center gap-2">
-              <i className="fas fa-edit text-acc"></i>
-              {t("contact.SendMessage")}
-            </h5>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="relative">
-                <i className="fas fa-user absolute left-4 top-1/2 transform -translate-y-1/2 text-white/60"></i>
-                <input
-                  name="name"
-                  type="text"
-                  placeholder={t("contact.name")}
-                  className="w-full p-4 pl-12 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-acc/50 focus:border-acc/50 transition-all duration-300 backdrop-blur-sm"
-                  value={form.name}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
-              <div className="relative">
-                <i className="fas fa-phone absolute left-4 top-1/2 transform -translate-y-1/2 text-white/60"></i>
-                <input
-                  name="phone"
-                  type="text"
-                  placeholder={t("contact.phone")}
-                  className="w-full p-4 pl-12 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-acc/50 focus:border-acc/50 transition-all duration-300 backdrop-blur-sm"
-                  value={form.phone}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
-              <div className="relative">
-                <i className="fas fa-message absolute left-4 top-6 text-white/60"></i>
-                <textarea
-                  name="message"
-                  placeholder={t("contact.message")}
-                  className="w-full p-4 pl-12 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-acc/50 focus:border-acc/50 transition-all duration-300 backdrop-blur-sm resize-none"
-                  rows={4}
-                  value={form.message}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
-              {status === "success" && (
-                <p className="text-green-400 text-sm text-center">Message sent successfully!</p>
-              )}
-              {status === "error" && (
-                <p className="text-red-400 text-sm text-center">Failed to send. Please try again.</p>
-              )}
-              <button
-                type="submit"
-                disabled={sending}
-                className="w-full bg-gradient-to-r from-white to-gray-100 text-pr font-semibold py-4 px-6 rounded-xl hover:from-grayTone hover:to-gray-200 hover:scale-[1.02] transition-all duration-300 shadow-lg border-0 flex items-center justify-center gap-3 group disabled:opacity-60 disabled:cursor-not-allowed"
-              >
-                <i className="fas fa-paper-plane text-pr group-hover:translate-x-1 transition-transform duration-300"></i>
-                {sending ? "Sending..." : t("contact.send")}
-              </button>
-            </form>
-          </div>
         </div>
       </div>
     </div>
