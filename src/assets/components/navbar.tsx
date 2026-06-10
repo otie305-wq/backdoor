@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
               <img
                 src={placeholderIcon}
                 alt="Site Logo"
-                className="w-10 h-10 object-contain"
+                className="w-14 h-14 object-contain"
               />
               <span lang="en">{t("siteName")}</span>
             </a>
