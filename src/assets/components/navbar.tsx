@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
-import placeholderIcon from "../images/plachholder_icon.jpg";
+import placeholderIcon from "../images/newlogo.png";
 
 const Navbar: React.FC = () => {
   const { t } = useTranslation();
