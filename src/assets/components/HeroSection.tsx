@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import newlogo from "../images/newlogo.png";
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation();
@@ -9,6 +10,10 @@ const HeroSection: React.FC = () => {
       <div className="hero bg-pr text-white min-h-screen relative overflow-hidden">
         <div className="hero-content text-center relative z-10">
           <div className="max-w-6xl mx-auto">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <img src={newlogo} alt="Site Logo" className="w-5 h-5 object-cover" />
+              <span lang="en" className="text-sm font-semibold tracking-wide text-gray-300">{t("siteName")}</span>
+            </div>
             <h1 className="text-h1 font-heading font-bold tracking-tighter mb-10 bg-gradient-to-r from-white via-acc to-white bg-clip-text text-transparent">
               {t("hero.title")}
             </h1>
