@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import newlogo from "../images/newlogotransparent.png";
+import HeroBinaryOverlay from "./HeroBinaryOverlay";
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation();
@@ -43,6 +44,8 @@ const HeroSection: React.FC = () => {
             </div> */}
           </div>
         </div>
+
+        <HeroBinaryOverlay />
 
         {/* Bottom accent line */}
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-acc to-transparent"></div>
