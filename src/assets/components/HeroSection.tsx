@@ -11,10 +11,7 @@ const HeroSection: React.FC = () => {
         <div className="hero-content text-center relative z-10">
           <div className="max-w-6xl mx-auto">
             <div className="flex justify-center mb-8">
-              <div className="relative w-28 h-28">
-                <img src={newlogo} alt="Site Logo" className="w-28 h-28 object-contain" />
-                <div className="absolute inset-0 bg-gradient-to-r from-white via-acc to-white mix-blend-screen pointer-events-none" />
-              </div>
+              <img src={newlogo} alt="Site Logo" className="w-28 h-28 object-contain" />
             </div>
             <h1 className="text-h1 font-heading font-bold tracking-tighter mb-10 bg-gradient-to-r from-white via-acc to-white bg-clip-text text-transparent">
               {t("hero.title")}
