@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import newlogo from "../images/newlogo.png";
+import newlogo from "../images/newlogotransparent.png";
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation();

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
-import placeholderIcon from "../images/newlogo.png";
+import placeholderIcon from "../images/newlogotransparent.png";
 
 const Navbar: React.FC = () => {
   const { t } = useTranslation();
@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
               <img
                 src={placeholderIcon}
                 alt="Site Logo"
-                className="w-6 h-6 object-cover"
+                className="w-10 h-10 object-contain"
               />
               <span lang="en">{t("siteName")}</span>
             </a>
