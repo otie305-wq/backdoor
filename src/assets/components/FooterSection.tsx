@@ -25,6 +25,17 @@ const FooterSection: React.FC = () => {
             © {new Date().getFullYear()} -{" "}
             {t("footer.rights", { company: "backdoor" })}
           </p>
+          <p>
+            {t("footer.verification.text")} •{" "}
+            <a
+              href="https://maroof.sa/businesses/details/309992"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-white/80"
+            >
+              {t("footer.verification.viewLink")}
+            </a>
+          </p>
         </aside>
       </footer>
     </section>

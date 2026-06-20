@@ -146,7 +146,11 @@
       "youtube": "YouTube",
       "facebook": "Facebook"
     },
-    "rights": "All rights reserved by {{company}}."
+    "rights": "All rights reserved by {{company}}.",
+    "verification": {
+      "text": "Verified on Maroof • ID #373521 • Trusted Digital Innovation Partner",
+      "viewLink": "View Verification"
+    }
   },
   "contact": {
     "question": "Have any question about us?",
