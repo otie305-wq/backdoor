@@ -28,7 +28,7 @@ const FooterSection: React.FC = () => {
           <p>
             {t("footer.verification.text")} •{" "}
             <a
-              href="https://maroof.sa/businesses/details/309992"
+              href="https://maroof.sa/businesses/details/373521"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:text-white/80"
